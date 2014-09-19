@@ -70,7 +70,7 @@ def get_values():
 def split(mtx,num):
     matrix = np.array(mtx)
     matrix_splitted = np.array(np.split(matrix, num))
-    return matrix_splitted
+    return np.fliplr(matrix_splitted)
     
     
 # SVM learn and classify
